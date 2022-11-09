@@ -1,0 +1,129 @@
+body{
+    margin: 0px;
+}
+
+.main {
+    background-image: linear-gradient(to bottom right,#a1c4fd ,#c2e9fb); 
+    width: 100vw;
+    height: 100vh;
+}
+.thu-chinh{
+    width: 50vw;
+    height: 60vh;
+    background-color: white;
+    left: calc(50% - 25vw);
+    top: calc(50% - 20vh);
+    position:absolute;
+}
+.triangle {  
+    width: calc(50vw - 2px);  
+    height: calc(30vh - 2px);  
+    background-color: rgb(237, 237, 237);
+    border: black;  
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);  /* polygon(1[x y], 2[x y], 3[x y]) */
+    rotate: 180deg;
+    position:absolute;
+    left: calc(50% - 25vw + 1px);
+    top: calc(50% - 20vh + 1px);
+z-index: 7;
+
+}
+.triangle2 {  
+    width: 50vw;  
+    height: 30vh;  
+    background-color: black;
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);  /* polygon(1[x y], 2[x y], 3[x y]) */
+    rotate: 180deg;
+    position:absolute;
+    left: calc(50% - 25vw);
+    top: calc(50% - 20vh);
+    z-index: 6;
+}
+.triangle3 {  
+    width: 50vw;  
+    height: 30vh;  
+    background-color: white;
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);  /* polygon(1[x y], 2[x y], 3[x y]) */
+    position:absolute;
+    left: calc(50% - 25vw);
+    z-index: 6;
+}
+
+.la-thu{
+    width: 40vw;
+    height: 50vh;
+    background-color: #ffe3b3;
+    position: absolute;
+    left: calc(50% - 20vw);
+    top: calc(50% - 20vh);
+    z-index: 100;
+    border-radius: 10px;
+    transition: 2s;
+}
+.la-thu:hover{
+    top: calc(50% - 40vh);
+
+}
+.text{
+    display: none;
+    width: 100%;
+}
+img{
+    display: none;
+    width: 10vw;
+    margin: auto;
+}
+.text h2{
+    font-family: sans-serif;
+    margin: auto;
+    text-align: center;
+    margin-top: 5vh;
+}
+.la-thu:hover .text{
+    display: inline-block;
+}
+.la-thu:hover img{
+    display: block;
+}
+.triangle4 {  
+    width: 50vw;  
+    height: 30vh;  
+    background-color: white;
+    clip-path: polygon(0% 0, 0 100%, 50% 100%);  /* polygon(1[x y], 2[x y], 3[x y]) */
+    position:absolute;
+    left: calc(50% - 25vw);
+    top: calc(50% - 20vh);
+
+    z-index: 120;
+}
+.con4{
+    position:absolute;
+    width: 25vw;
+    height: 30vh;
+    z-index: 130;
+    top: 0px;
+    background-color: white;
+    left: calc(50% - 25vw);
+    top: calc(50% + 10vh);
+}
+.triangle5 {  
+    width: 50vw;  
+    height: 30vh;  
+    background-color: white;
+    clip-path: polygon(50% 0, 0 100%, 50% 100%);  /* polygon(1[x y], 2[x y], 3[x y]) */
+    position:absolute;
+    left: calc(50% - 0vw);
+    top: calc(50% - 20vh);
+    z-index: 120;
+}
+.con5{
+    position:absolute;
+    width: 25vw;
+    height: 30vh;
+    z-index: 130;
+    top: 0px;
+    background-color: white;
+    left: calc(50% - 0vw);
+    top: calc(50% + 10vh);
+}
+
